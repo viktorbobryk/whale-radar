@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { AppShell } from "@/components/shell/AppShell";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "WhaleRadar",
-  description: "Пульт відстеження ончейн-угод китів",
+  description: "Live whale scanner, copy-trading deck, and alerts",
+  icons: { icon: "/brand/logo.jpg" },
 };
 
 export default function RootLayout({
@@ -12,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="uk">
-      <body className="antialiased">{children}</body>
+    <html lang="en">
+      <body className="font-sans antialiased">
+        <AppShell>{children}</AppShell>
+      </body>
     </html>
   );
 }

@@ -4,6 +4,7 @@
 .env.*.local
 
 # python
+backend/discovered_wallets.json
 __pycache__/
 *.py[cod]
 .venv/

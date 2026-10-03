@@ -1,0 +1,17 @@
+---
+description: WhaleRadar is a private personal analog of Arkham Intelligence
+alwaysApply: true
+---
+
+# Product
+
+WhaleRadar is a private, single-user analog of Arkham Intelligence (user spelling: archam). It is for the owner's own use, not a public product, intel marketplace, or multi-user labeling network.
+
+The main job is tracking whale trades so the owner can see the underwater picture of the market. Build for that first:
+
+- A live feed of whale swaps, starting on Base
+- Wallet and entity labels the owner keeps for themselves
+- Transaction history, counterparties, portfolio, and PnL for watched addresses
+- Alerts on size, token, chain, and whale or entity activity
+
+Copy-trading is last and is not planned now. Do not add swap execution, a bot wallet, honeypot checks, or auto-copy unless the owner explicitly asks. Private keys stay in server `.env` only and never reach the frontend.
